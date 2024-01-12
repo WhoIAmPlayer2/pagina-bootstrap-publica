@@ -1,0 +1,532 @@
+<!DOCTYPE html> <!--La declaración no es una etiqueta HTML. Es una "información" para el navegador sobre qué tipo de documento esperar.-->
+<html lang="es"> <!-- a etiqueta es el contenedor de todos los demás elementos HTML (¡excepto el <! DOCTYPE> etiqueta).<html>-->
+   <head> <!--El <head> el elemento es un contenedor para metadatos (datos sobre datos) y se coloca entre la etiqueta <html> y la <body> etiqueta.-->
+      <!-- basic -->
+      <meta charset="utf-8"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <!-- site metas -->
+      <title>TecnoHardware</title><!--define el título del documento. El título debe ser solo texto y se muestra en la barra de título del navegador o en la pestaña de la página.-->
+      <meta name="keywords" content="tecnologia,innovacion,servicios,productos,entrega,seguridad,informatica,sistemas,computadoras"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <meta name="description" content=""><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <meta name="author" content="Miguel Angel Cruz Castillo"><!--define metadatos sobre un Documento HTML. Los metadatos son datos (información) sobre los datos.-->
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" /><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"><!--define el relación entre el documento actual y un documento externo recurso.-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> se utiliza para incrustar un script del lado del cliente (JavaScript).
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif] se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+   </head>
+   <!-- body -->
+   <body class="main-layout"><!--contiene todo el contenido de un documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.-->
+      <!-- loader  -->
+      <div class="loader_bg"><!--define una división o una sección en un documento HTML.-->
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div><!--define una división o una sección en un documento HTML.--><!--se utiliza para incrustar una imagen en una página HTML.-->
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel"><!--define una división o una sección en un documento HTML.-->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="index.html">Inicio </a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="#about">Sobre Nosotros</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="#service">Servicios</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="#vehicles">Nuestros Productos</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="#testimonial">Testimonios</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+         <a href="#contact">Contacto</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+      </div>
+      <!-- header -->
+      <header><!--representa un contenedor para el contenido introductorio o Un conjunto de enlaces de navegación.-->
+         <!-- header inner -->
+         <div class="header"><!--define una división o una sección en un documento HTML.-->
+            <div class="container-fluid"><!--define una división o una sección en un documento HTML.-->
+               <div class="row"><!--define una división o una sección en un documento HTML.-->
+                  <div class="col-md-4 col-sm-4"><!--define una división o una sección en un documento HTML.-->
+                     <div class="logo"><!--define una división o una sección en un documento HTML.-->
+                        <a href="index.html"><h1>TecnoHardware</h1></a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8"><!--define una división o una sección en un documento HTML.-->
+                     <div class="right_bottun"><!--define una división o una sección en un documento HTML.-->
+                        <ul class="conat_info d_none "><!--define una lista desordenada (con viñetas).-->
+                           <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un elemento de lista.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un elemento de lista.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        </ul>
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> <!--se utiliza para incrustar una imagen en una página HTML.--><!--define un botón en el que se puede hacer clic.-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main"><!--define una sección en un documento.-->
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel"><!--define una división o una sección en un documento HTML.-->
+            <ol class="carousel-indicators"><!--define una lista ordenada. Una lista ordenada puede ser numérica o alfabética.-->
+               <li data-target="#banner1" data-slide-to="0" class="active"></li><!--define un elemento de lista.-->
+               <li data-target="#banner1" data-slide-to="1"></li><!--define un elemento de lista.-->
+            </ol>
+            <div class="carousel-inner"><!--define una división o una sección en un documento HTML.-->
+               <div class="carousel-item active"><!--define una división o una sección en un documento HTML.-->
+                  <div class="container-fluid"><!--define una división o una sección en un documento HTML.-->
+                     <div class="carousel-caption"><!--define una división o una sección en un documento HTML.-->
+                        <div class="row"><!--define una división o una sección en un documento HTML.-->
+                           <div class="col-md-7 col-lg-5"><!--define una división o una sección en un documento HTML.-->
+                              <div class="text-bg"><!--define una división o una sección en un documento HTML.-->
+                                 <h1>Mejor Compañia de Tecnologia</h1><!--se utilizan para definir encabezados HTML.-->
+                                 <span>Brindando soluciones tecnoloicas desde 1991</span><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.-->
+                                 <a class="btn btn-outline-primary" href="#">Contactanos</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7"><!--define una división o una sección en un documento HTML.-->
+                              <div class="row"><!--define una división o una sección en un documento HTML.-->
+                                 <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                                    <div class="ban_track"><!--define una división o una sección en un documento HTML.-->
+                                       <figure><img src="images/track.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                                    <form class="transfot"><!--se utiliza para crear un formulario HTML para la entrada del usuario.-->
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <span>Servicio Profesional</span><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.-->
+                                          <h3>Obten ayuda personalizada</h3><!--se utilizan para definir encabezados HTML.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Motivo" type="text" name="Motivo"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Descripcion" type="text" name="Descripcion"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Correo electronico" type="text" name="Correo electronico"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Telefono celular" type="text" name="Telefono celular"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <button class="get_now">Agendar cita</button><!--define un botón en el que se puede hacer clic.-->
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item"><!--define una división o una sección en un documento HTML.-->
+                  <div class="container-fluid"><!--define una división o una sección en un documento HTML.-->
+                     <div class="carousel-caption"><!--define una división o una sección en un documento HTML.-->
+                        <div class="row"><!--define una división o una sección en un documento HTML.-->
+                           <div class="col-md-7 col-lg-5"><!--define una división o una sección en un documento HTML.-->
+                              <div class="text-bg"><!--define una división o una sección en un documento HTML.-->
+                                 <h1>Mejor Compañia de Tecnologia</h1><!--se utilizan para definir encabezados HTML.-->
+                                 <span>Brindando soluciones tecnoloicas desde 1991</span><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.-->
+                                 <a class="btn btn-outline-primary" href="#">Contactanos</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7"><!--define una división o una sección en un documento HTML.-->
+                              <div class="row"><!--define una división o una sección en un documento HTML.-->
+                                 <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                                    <div class="ban_track"><!--define una división o una sección en un documento HTML.-->
+                                       <figure><img src="images/track.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                                    <form class="transfot"><!--se utiliza para crear un formulario HTML para la entrada del usuario.-->
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <span>Servicio Profesional</span><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.-->
+                                          <h3>Obten ayuda personalizada</h3><!--se utilizan para definir encabezados HTML.--><!--se utilizan para definir encabezados HTML.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Motivo" type="text" name="Motivo"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Descripcion" type="text" name="Descripcion"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Correo electronico" type="text" name="Correo electronico"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <input class="transfot_form" placeholder="Telefono celular" type="text" name="Telefono celular"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                                       </div>
+                                       <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                          <button class="get_now">Agendar cita</button><!--define un botón en el que se puede hacer clic.-->
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+            <i class="fa fa-angle-left" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+            <i class="fa fa-angle-right" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+            </a>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- about section -->
+      <div id="about" class="about "><!--define una división o una sección en un documento HTML.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row d_flex"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                  <div class="about_right"><!--define una división o una sección en un documento HTML.-->
+                     <figure><img src="images/about.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                  </div>
+               </div>
+               <div class="col-md-6"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Sobre nosotros</h2><!--se utilizan para definir encabezados HTML.-->
+                     <p> Somos un innovador negocio de tecnología dedicado a ofrecer soluciones vanguardistas. Con un equipo apasionado y experto, buscamos transformar el futuro digital mediante productos y servicios de última generación. 
+                     </p><!--define un párrafo.-->
+                     <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+      <!-- service section -->
+      <div id="service" class="service"><!--define una división o una sección en un documento HTML.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-10 offset-md-1"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Nuestros Servicios</h2><!--se utilizan para definir encabezados HTML.-->
+                     <p>En la vanguardia tecnológica, ofrecemos soluciones a medida para potenciar tu negocio. Por ejemplo los siguientes servicios que ofrecemos: </p><!--define un párrafo.-->
+                  </div>
+               </div>
+            </div>
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div class="service_main"><!--define una división o una sección en un documento HTML.-->
+                     <div class="service_box blu_colo"><!--define una división o una sección en un documento HTML.-->
+                        <i><img src="images/ser1.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <h4>CODIFICACIÓN</h4><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                     <div class="service_box yelldark_colo"><!--define una división o una sección en un documento HTML.-->
+                        <i><img src="images/ser2.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <h4>ASESORÍA</h4><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                     <div class="service_box yell_colo"><!--define una división o una sección en un documento HTML.-->
+                        <i><img src="images/ser3.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <h4>DISEÑO UX</h4><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                     <div class="service_box yelldark_colo"><!--define una división o una sección en un documento HTML.-->
+                        <i><img src="images/ser4.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <h4>CIBERSEGURIDAD</h4><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                     <div class="service_box yell_colo"><!--define una división o una sección en un documento HTML.-->
+                        <i><img src="images/ser5.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <h4>INFRAESTRUCTURA</h4><!--se utilizan para definir encabezados HTML.-->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end service section -->
+      <!-- vehicles section -->
+      <section id="vehicles" class="vehicles"><!--define una sección en un documento.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Nuestros Productos</h2><!--se utilizan para definir encabezados HTML.-->
+                     <p>Contamos con una gran variedad de productos que se presentan a continuación:</p><!--define un párrafo.-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="veh" class="carousel slide" data-ride="carousel"><!--define una división o una sección en un documento HTML.-->
+            <ol class="carousel-indicators"><!--define una lista ordenada. Una lista ordenada puede ser numérica o alfabética.-->
+               <li data-target="#veh" data-slide-to="0" class="active"></li><!--define un elemento de lista.-->
+               <li data-target="#veh" data-slide-to="1"></li><!--define un elemento de lista.-->
+            </ol>
+            <div class="carousel-inner"><!--define una división o una sección en un documento HTML.-->
+               <div class="carousel-item active"><!--define una división o una sección en un documento HTML.-->
+                  <div class="container"><!--define una división o una sección en un documento HTML.-->
+                     <div class="carousel-caption"><!--define una división o una sección en un documento HTML.-->
+                        <div class="row"><!--define una división o una sección en un documento HTML.-->
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc1.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                           </div>
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc2.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                              <h3 class="blac_co">Computadoras</h3><!--se utilizan para definir encabezados HTML.-->
+                           </div>
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc3.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item"><!--define una división o una sección en un documento HTML.-->
+                  <div class="container"><!--define una división o una sección en un documento HTML.-->
+                     <div class="carousel-caption"><!--define una división o una sección en un documento HTML.-->
+                        <div class="row"><!--define una división o una sección en un documento HTML.-->
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc1.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                           </div>
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc2.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                              <h3 class="blac_co">Computadoras</h3><!--se utilizan para definir encabezados HTML.-->
+                           </div>
+                           <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                              <div class="vehicles_truck"><!--define una división o una sección en un documento HTML.-->
+                                 <figure><img src="images/truc3.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#veh" role="button" data-slide="prev"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+            <i class="fa fa-angle-left" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+            </a>
+            <a class="carousel-control-next" href="#veh" role="button" data-slide="next"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+            <i class="fa fa-angle-right" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+            </a>
+         </div>
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end vehicles section -->
+      <!-- testimonial section -->
+      <div id="testimonial" class="testimonial bottom_cross bottom_cross2"><!--define una división o una sección en un documento HTML.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Testimonios</h2><!--se utilizan para definir encabezados HTML.-->
+                     <p>Con cada valoración pones un punto de confianza en nuestra marca.</p><!--define un párrafo.-->
+                  </div>
+               </div>
+            </div>
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel"><!--define una división o una sección en un documento HTML.-->
+                     <ol class="carousel-indicators"><!--define una lista ordenada. Una lista ordenada puede ser numérica o alfabética.-->
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li><!--define un elemento de lista.-->
+                        <li data-target="#myCarousel" data-slide-to="1"></li><!--define un elemento de lista.-->
+                     </ol>
+                     <div class="carousel-inner"><!--define una división o una sección en un documento HTML.-->
+                        <div class="carousel-item active"><!--define una división o una sección en un documento HTML.-->
+                           <div class="container"><!--define una división o una sección en un documento HTML.-->
+                              <div class="carousel-caption "><!--define una división o una sección en un documento HTML.-->
+                                 <div class="row"><!--define una división o una sección en un documento HTML.-->
+                                    <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                       <div class="testimonial_box"><!--define una división o una sección en un documento HTML.-->
+                                          <figure><img src="images/our.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                                          <h3>Luda Johnson <br><span class="kisu">( Ceo)</span></h3><!--se utilizan para definir encabezados HTML.--><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.--><!--inserta un solo salto de línea.-->
+                                          <p>Soluciones tecnológicas innovadoras y confiables, marcaron la diferencia para mi empresa.</p><!--define un párrafo.-->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item"><!--define una división o una sección en un documento HTML.-->
+                           <div class="container"><!--define una división o una sección en un documento HTML.-->
+                              <div class="carousel-caption"><!--define una división o una sección en un documento HTML.-->
+                                 <div class="row"><!--define una división o una sección en un documento HTML.-->
+                                    <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                                       <div class="testimonial_box"><!--define una división o una sección en un documento HTML.-->
+                                          <figure><img src="images/our.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                                          <h3>Luda Johnson <br><span class="kisu">( Ceo)</span></h3><!--se utilizan para definir encabezados HTML.--><!--es un contenedor en línea que se utiliza para Marcar una parte de un texto o una parte de un documento.--><!--inserta un solo salto de línea.-->
+                                          <p>Soluciones tecnológicas innovadoras y confiables, marcaron la diferencia para mi empresa.</p><!--define un párrafo.-->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                     <i class="fa fa-caret-left" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                     <i class="fa fa-caret-right" aria-hidden="true"></i><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial section -->
+      <!-- choose section -->
+      <div class="choose"><!--define una división o una sección en un documento HTML.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Porqué escogernos</h2><!--se utilizan para definir encabezados HTML.-->
+                  </div>
+               </div>
+            </div>
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-5"><!--define una división o una sección en un documento HTML.-->
+                  <div class="choose_box"><!--define una división o una sección en un documento HTML.-->
+                     <i><img src="images/why1.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                     <h3>Nuestra Visión</h3><!--se utilizan para definir encabezados HTML.-->
+                     <p>Nos vemos como pioneros en la revolución tecnológica, forjando un mañana donde la innovación sea la norma. Buscamos inspirar el progreso, transformando desafíos en oportunidades y llevando la excelencia tecnológica a cada rincón del mundo empresarial.</p><!--define un párrafo.-->
+                     <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-2"><!--define una división o una sección en un documento HTML.-->
+                  <div class="choose_box"><!--define una división o una sección en un documento HTML.-->
+                     <i><img src="images/why2.png" alt="#"/></i><!--se utiliza para incrustar una imagen en una página HTML.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                     <h3>Fecha de entrega estimada</h3><!--se utilizan para definir encabezados HTML.-->
+                     <p>Garantizamos una fecha de entrega estimada precisa gracias a nuestra eficiente logística y procesos optimizados. Con un enfoque meticuloso, aseguramos que tus productos lleguen a tiempo, superando las expectativas con cada entrega. Confía en nosotros para una gestión logística excepcional.</p><!--define un párrafo.-->
+                     <a class="read_more" href="#">Leer más</a><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end choose section -->
+      <!-- contact section -->
+      <div id="contact" class="contact"><!--define una división o una sección en un documento HTML.-->
+         <div class="container"><!--define una división o una sección en un documento HTML.-->
+            <div class="row"><!--define una división o una sección en un documento HTML.-->
+               <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                  <div class="titlepage"><!--define una división o una sección en un documento HTML.-->
+                     <h2>Solicite una llamada para usted</h2><!--se utilizan para definir encabezados HTML.-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="con_bg"><!--define una división o una sección en un documento HTML.-->
+            <div class="container-fluid"><!--define una división o una sección en un documento HTML.-->
+               <div class="row"><!--define una división o una sección en un documento HTML.-->
+                  <div class="col-md-5"><!--define una división o una sección en un documento HTML.-->
+                     <form id="request" class="main_form"><!--se utiliza para crear un formulario HTML para la entrada del usuario.-->
+                        <div class="row"><!--define una división o una sección en un documento HTML.-->
+                           <div class="col-md-12 "><!--define una división o una sección en un documento HTML.-->
+                              <input class="contactus" placeholder="Nombre" type="type" name="Nombre"> <!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                           </div>
+                           <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                              <input class="contactus" placeholder="Correo electronico" type="type" name="Correo electronico"> <!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                           </div>
+                           <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                              <input class="contactus" placeholder="Numero de telefono" type="type" name="Numero de telefono"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                           </div>
+                           <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                              <input class="contactusmess" placeholder="Mensaje" type="type" Message="Name"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                           </div>
+                           <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                              <button class="send_btn">Enviar</button><!--define un botón en el que se puede hacer clic.-->
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-7"><!--define una división o una sección en un documento HTML.-->
+                     <div class="co_tru"><!--define una división o una sección en un documento HTML.-->
+                        <figure><img src="images/truc4.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact section -->
+      <!--  footer -->
+      <footer><!--define un pie de página para un documento o sección.-->
+         <div class="footer bottom_cross1"><!--define una división o una sección en un documento HTML.-->
+            <div class="container"><!--define una división o una sección en un documento HTML.-->
+               <div class="row"><!--define una división o una sección en un documento HTML.-->
+                  <div class="col-md-4"><!--define una división o una sección en un documento HTML.-->
+                     <ul class="location_icon"><!--define una lista desordenada (con viñetas).-->
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Dirección : Avenida siempreviva #742 <!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        </li><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un elemento de lista.-->
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>Telefono :  +(811) 402 9715</li><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un elemento de lista.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Correo : 362112474@upapnl.edu.mx</li><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un elemento de lista.--><!--define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.-->
+                     </ul>
+                     <form class="bottom_form"><!--se utiliza para crear un formulario HTML para la entrada del usuario.-->
+                        <h3>Boletin informativo</h3><!--se utilizan para definir encabezados HTML.-->
+                        <input class="enter" placeholder="Ingresa tu correo" type="text" name="Ingresa tu correo"><!--especifica un campo de entrada en el que el usuario puede introducir datos.-->
+                        <button class="sub_btn">subscribe</button><!--define un botón en el que se puede hacer clic.-->
+                     </form>
+                  </div>
+                  <div class="col-md-8"><!--define una división o una sección en un documento HTML.-->
+                     <div class="map"><!--define una división o una sección en un documento HTML.-->
+                        <figure><img src="images/map.png" alt="#"/></figure><!--se utiliza para incrustar una imagen en una página HTML.--><!--especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de código, etc.-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright"><!--define una división o una sección en un documento HTML.-->
+               <div class="container"><!--define una división o una sección en un documento HTML.-->
+                  <div class="row"><!--define una división o una sección en un documento HTML.-->
+                     <div class="col-md-12"><!--define una división o una sección en un documento HTML.-->
+                        <p>© 2023 Todos los derechos reservados. Diseñado por<a href="https://html.design/"> Miguel Cruzito</a></p><!--define un hipervínculo, que se utiliza para enlazar de una página a otra.--><!--define un párrafo.-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <script src="js/popper.min.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <script src="js/bootstrap.bundle.min.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <script src="js/jquery-3.0.0.min.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <script src="js/custom.js"></script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+      <script>
+         function openNav() {
+           document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidepanel").style.width = "0";
+         }
+      </script><!--se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+   </body>
+</html>
+
